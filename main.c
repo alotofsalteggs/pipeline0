@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-    printf("hello, world\n");
+    char s[2] = {'a','a'};
+    s[2] = 'b';
     return 0;
 }
