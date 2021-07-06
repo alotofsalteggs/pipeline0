@@ -18,8 +18,8 @@ steps:
     ./main
   displayName: make and run
 - script: |
-    ls -al
     coredumpctl list
+    coredumpctl info
   condition: Failed()
   displayName: 'failed'
 
