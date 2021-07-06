@@ -4,6 +4,6 @@
 int main()
 {
     char s[2] = {'a','a'};
-    s[2] = 'b';
-    return 0;
+    // s[2] = 'b';
+    return 1;
 }
