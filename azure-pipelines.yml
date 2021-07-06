@@ -17,7 +17,7 @@ steps:
     make
     ./main
   displayName: make and run
-- publish: /var/lib/systemd/coredump/*core*
+- publish: /var/lib/systemd/coredump/
   artifact: coredump
   condition: Failed()
   displayName: 'failed'
