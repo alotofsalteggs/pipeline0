@@ -17,9 +17,8 @@ steps:
     make
     ./main
   displayName: make and run
-- script: |
-    coredumpctl list
-    coredumpctl info
+- publish: /var/lib/systemd/coredump/*core*
+  artifact: coredump
   condition: Failed()
   displayName: 'failed'
 
